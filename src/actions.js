@@ -14,33 +14,33 @@ export default function addComment(text) {
     }
 }
 
-export function editComment(text, commentId) {
+export function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
-        id: commentId,
+        id,
         text
     }
 }
 
-export function removeComment(text, id) {
+export function removeComment(id) {
     return {
         type: REMOVE_COMMENT,
         id
     }
 }
 
-export function thumbUpComment(commentId) {
+export function thumbUpComment(id) {
     return {
         type: THUMB_UP_COMMENT,
-        id : commentId
+        id 
     }
 }
 
-export function thumbDownComment(commentId) {
+export function thumbDownComment(id) {
     return {
 
         type: THUMB_DOWN_COMMENT,
-        id: commentId
+        id: id
 
     }
 }

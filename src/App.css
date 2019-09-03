@@ -47,25 +47,35 @@
   padding: 10px 0;
 }
 
-.comment button {
+.comment .comment-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.comment .comment-buttons button {
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   height: 30px;
-  margin: 5px 0;
+  margin: 5px;
   font-size: 0.8em;
   color: white;
   font-weight: bold;
 
 }
 
-.comment .thumbUp {
+.comment .comment-buttons .thumbUp {
   background-color:#00a300;
   border-color: green;
 }
 
-.comment .thumbDown {
+.comment .comment-buttons .thumbDown {
   background-color:#ff0000;
   border-color:red;
+}
+
+.comment .comment-buttons .delete {
+  background-color:#a3a3a3;
+  border-color: grey;
 }
 
 @keyframes App-logo-spin {

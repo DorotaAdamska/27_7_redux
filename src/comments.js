@@ -20,7 +20,8 @@ function comments (state = [], action) {
             });
 
         case REMOVE_COMMENT:
-            return state.comments.filter(comment => comment.id !== action.id);
+            console.log("tutaj", state);
+            return state.filter(comment => comment.id !== action.id);
 
         case THUMB_UP_COMMENT:
             return state.map(comment => {
